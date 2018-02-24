@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Page</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="glyphicon glyphicon-fire"></span>300TiE</h1>
+            <hr>
+            <h2 class="text-center">Take the survey and
+                <span style="color:red"> Robo the Romance Bot</span> will arrange a sloppy one night stand!</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="/api/friends">
+                    <button type="button" class="btn btn-lg btn-primary">
+                        <span class="glyphicon glyphicon-list-alt"></span>Friends</button>
+                </a>
+                <a href="/">
+                    <button type="button" class="btn btn-lg btn-default">
+                        <span class="glyphicon glyphicon-home"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+
+                <!-- Reservation Page -->
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Survey Questions</h4>
+                    </div>
+                    <div class="panel-body">
+
+                        <div role="form">
+                            <div class="form-group">
+                                <label for="user-name">Name</label>
+                                <input type="text" class="form-control" id="reserve-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="image-name">Link to Photo Image (Required)</label>
+                                <input type="text" id="photo-name" class="form-control" required="">
+                            </div>
+                            <div class="form-group">
+                                <label for="question-one">Questions 1:</label>
+                                <p>How much do you lie about exercising?</p>
+                                <select class="custom-select" id="q1" required="">
+                                    <option selected></option>
+                                    <option value="1">1 (I lie once a week)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (I lie everyday)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-two">Question 2:</label>
+                                <p>Are you a vegan?</p>
+                                <select class="custom-select" id="q2">
+                                    <option selected></option>
+                                    <option value="1">1 (No! Im a hirrible person)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes! It is a great alternative to developing a personality)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-three">Question 3:</label>
+                                <p>Do you like question 3?</p>
+                                <select class="custom-select" id="q3">
+                                    <option selected></option>
+                                    <option value="1">1 (No!)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-four">Question 4:</label>
+                                <p>Earnest Goes to Camp - or - Earnest Goes to Jail?</p>
+                                <select class="custom-select" id="q4">
+                                    <option selected>
+                                        </optNoion>
+                                        <option value="1">1 (Camp!)</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5 (Jail!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-five">Question 5:</label>
+                                <p>Do you like cats?</p>
+                                <select class="custom-select" id="q5">
+                                    <option selected></option>
+                                    <option value="1">1 (No! I'm allergic)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes! They are delicious)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-six">Question 6:</label>
+                                <p>Do you like dogs?</p>
+                                <select class="custom-select" id="q6">
+                                    <option selected></option>
+                                    <option value="1">1 (No! I'm not one for joy)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-seven">Question 7:</label>
+                                <p>How many times do you eat taco bell each day?</p>
+                                <select class="custom-select" id="q7">
+                                    <option selected></option>
+                                    <option value="1">1 (just breakfast)</option>
+                                    <option value="2">2 (breakfast and lunch)</option>
+                                    <option value="3">3 (all meals)</option>
+                                    <option value="4">4 (all meals + brunch)</option>
+                                    <option value="5">5 (Dont forget the chaco taco)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-eight">Question 8:</label>
+                                <p>Do you keep your farts in a jar?</p>
+                                <select class="custom-select" id="q8">
+                                    <option selected></option>
+                                    <option value="1">1 (No!)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-nine">Question 9:</label>
+                                <p>Cottage Cheese?</p>
+                                <select class="custom-select" id="q9">
+                                    <option selected></option>
+                                    <option value="1">1 (No!)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (Yes!)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="question-ten">Question 10:</label>
+                                <p>How much do you hate people?</p>
+                                <select class="custom-select" id="q10">
+                                    <option selected></option>
+                                    <option value="1">1 (I hate most people!)</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5 (I hate everyone!)</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary submit">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Your Match</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Table Link</a> |
+                    <!-- <a href="/api/waitlist">API Wait List</a> | -->
+                    <a href="https://github.com/garviswbs/DatingApp">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+    var newUser;
+
+
+    $(".submit").on("click", function (event) {
+
+        event.preventDefault();
+
+        // Here we grab the form elements
+        newUser = {
+            "name": $("#reserve-name").val().trim(),
+            "photo": $("#photo-name").val().trim(),
+            "scores": [
+                parseInt($("#q1").val()),
+                parseInt($("#q2").val()),
+                parseInt($("#q3").val()),
+                parseInt($("#q4").val()),
+                parseInt($("#q5").val()),
+                parseInt($("#q6").val()),
+                parseInt($("#q7").val()),
+                parseInt($("#q8").val()),
+                parseInt($("#q9").val()),
+                parseInt($("#q10").val())
+
+            ]
+        };
+        console.log(newUser);
+        console.log(newUser.name);
+        console.log(newUser.photo);
+        console.log(newUser.scores);
+
+        $.ajax({
+            url: "/api/friends",
+            type: 'POST',
+            data: JSON.stringify(newUser),
+            // use content type not - dataType: 'json'
+            contentType: 'application/json'
+        }).then((Response) => {
+            console.log(Response.name);
+            $('#myModal').modal();
+            $(".modal-body").html(Response.name +
+                `<img id="theImg" src="${Response.photo}" style="width:100%"/>`);
+        });
+
+        $("#reserve-name").val("");
+        $("#photo-name").val("");
+        $("#q1").val("");
+        $("#q2").val("");
+        $("#q3").val("");
+        $("#q4").val("");
+        $("#q5").val("");
+        $("#q6").val("");
+        $("#q7").val("");
+        $("#q8").val("");
+        $("#q9").val("");
+        $("#q10").val("");
+
+
+        // $(`Your match is ${tableData[matchPosition]}`).appendTo('.modal-body');
+    });
+</script>
